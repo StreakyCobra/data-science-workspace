@@ -1,6 +1,8 @@
 install: in_virtual_env
 	pip install -r requirements.txt; pip install -U pip
 	python -m ipykernel install --user
+	jupyter contrib nbextension install --user
+	jupyter nbextensions_configurator enable --user
 
 update: in_virtual_env
 	pip install -U -r requirements.txt; pip install -U pip

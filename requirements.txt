@@ -15,7 +15,12 @@ jsonschema==2.5.1
 jupyter==1.0.0
 jupyter-client==4.4.0
 jupyter-console==5.0.0
+jupyter-contrib-core==0.3.0
+jupyter-contrib-nbextensions==0.2.4
 jupyter-core==4.2.1
+jupyter-highlight-selected-word==0.0.7
+jupyter-latex-envs==1.3.6
+jupyter-nbextensions-configurator==0.2.3
 lazy-object-proxy==1.2.2
 MarkupSafe==0.23
 matplotlib==2.0.0
@@ -35,12 +40,14 @@ pickleshare==0.7.4
 pip-review==0.5.2
 prompt-toolkit==1.0.13
 protobuf==3.2.0
+psutil==5.1.1
 ptyprocess==0.5.1
 Pygments==2.2.0
 pylint==1.6.5
 pyparsing==2.1.10
 python-dateutil==2.6.0
 pytz==2016.10
+PyYAML==3.12
 pyzmq==16.0.2
 qtconsole==4.2.1
 scipy==0.18.1
