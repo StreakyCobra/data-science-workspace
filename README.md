@@ -1,6 +1,6 @@
 # Practice Deep Learning
 
-This repository contains my workspace when practicing Deep Learning.
+This repository contains my workspace for practicing Deep Learning.
 
 ## Requirements
 
