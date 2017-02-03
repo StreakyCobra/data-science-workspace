@@ -70,7 +70,7 @@ This repository contains my workspace for practicing Deep Learning.
 
 2. Update the dependencies:
 
-        make install
+        make update
 
 3. Reactivate the environment:
 
