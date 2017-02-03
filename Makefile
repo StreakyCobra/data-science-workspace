@@ -1,5 +1,5 @@
 install: in_virtual_env
-	pip install -U -r requirements.txt; pip install -U pip
+	pip install -r requirements.txt; pip install -U pip
 	python -m ipykernel install --user
 
 in_virtual_env:
