@@ -1,0 +1,32 @@
+# Better python interpreter
+ipython
+
+# Deep Learning libraries
+tensorflow-gpu
+keras
+
+# Jupyter notebook
+jupyter
+jupyter-contrib-nbextensions
+jupyter-nbextensions-configurator
+
+# Linting
+autoflake
+flake8
+isort
+pep257
+pylint
+
+# Scientific libraries
+numpy
+pandas
+scikit-learn
+scikit-image
+
+# Plotting libraries
+matplotlib
+seaborn
+bokeh
+
+# Workspace tools
+pip-tools

@@ -1,5 +1,6 @@
 install: in_virtual_env
-	pip install -r requirements.txt; pip install -U pip
+	pip install -U pip numpy  # Numpy is needed to bootstrap scikit-image installation
+	pip install -r requirements.txt
 	python -m ipykernel install --user
 	jupyter contrib nbextension install --user
 	jupyter nbextensions_configurator enable --user
