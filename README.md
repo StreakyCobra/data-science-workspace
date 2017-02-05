@@ -6,7 +6,7 @@ This repository contains my workspace for doing Deep Learning.
 
 * [anaconda](https://www.continuum.io/downloads)
 
-## How to set-up the environment the first time
+## How to set-up the workspace the first time
 
 1. If not already existing, create a conda environment:
 
@@ -46,7 +46,7 @@ This repository contains my workspace for doing Deep Learning.
             ]
         }
 
-## How to use the environment
+## How to use the workspace
 
 1. Activate the environment (if not already activated on this session):
 
@@ -56,7 +56,7 @@ This repository contains my workspace for doing Deep Learning.
 
         jupyter notebook
 
-## How to update the environment
+## How to update the workspace
 
 1. Activate the environment (if not already activated on this session):
 
