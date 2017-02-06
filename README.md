@@ -43,11 +43,14 @@ This repository contains my workspace for doing Deep Learning.
 
 5. GPU support for Jupyter:
 
-    For computers on linux with optimus, you have to make a kernel that will be called with "optirun" to be able to use GPU acceleration. For this go the the following folder:
+    For computers on linux with optimus, you have to make a kernel that will be
+    called with "optirun" to be able to use GPU acceleration. For this go to the
+    following folder:
 
         cd ~/.local/share/jupyter/kernels/
 
-    then edit the file `python3/kernel.json` in order to add `optirun` as first entry into the `argv` entry:
+    then edit the file `python3/kernel.json` in order to add `"optirun"` as
+    first entry into the `argv` array:
 
         {
             "language": "python",
