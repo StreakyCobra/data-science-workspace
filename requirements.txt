@@ -23,7 +23,7 @@ ipython==5.2.2
 ipywidgets==5.2.2         # via jupyter
 isort==4.2.5
 Jinja2==2.9.5             # via bokeh, nbconvert, notebook
-jsonschema==2.5.1         # via nbformat
+jsonschema==2.6.0         # via nbformat
 jupyter-client==4.4.0     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.1.0    # via jupyter
 jupyter-contrib-core==0.3.0  # via jupyter-contrib-nbextensions, jupyter-nbextensions-configurator
