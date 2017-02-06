@@ -7,6 +7,7 @@
 appdirs==1.4.0            # via setuptools
 astroid==1.4.9            # via pylint
 autoflake==0.6.6
+autopep8==1.2.4
 bleach==1.5.0             # via nbconvert
 bokeh==0.12.4
 click==6.7                # via pip-tools
@@ -49,6 +50,7 @@ packaging==16.8           # via setuptools
 pandas==0.19.2
 pandocfilters==1.4.1      # via nbconvert
 pep257==0.7.0
+pep8==1.7.0               # via autopep8
 pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
 pillow==4.0.0             # via scikit-image
