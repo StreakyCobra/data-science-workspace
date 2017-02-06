@@ -1,12 +1,16 @@
 install: in_virtual_env
 	pip install -U pip numpy  # Numpy is needed to bootstrap scikit-image installation
 	pip install -r requirements.txt
+
+setup: in_virtual_env
+	${MAKE} install
 	python -m ipykernel install --user
 	jupyter contrib nbextension install --user
 	jupyter nbextensions_configurator enable --user
 
 update: in_virtual_env
-	pip install -U -r requirements.txt; pip install -U pip
+	pip-compile --upgrade
+	${MAKE} install
 
 in_virtual_env:
 	@if [[ -n $$CONDA_DEFAULT_ENV ]]; then \

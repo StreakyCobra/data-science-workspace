@@ -16,9 +16,9 @@ This repository contains my workspace for doing Deep Learning.
 
         source activate deep_learning
 
-3. Install the dependencies
+3. Setup the workspace
 
-        make install
+        make setup
 
 4. Reactivate the environment:
 
@@ -56,7 +56,26 @@ This repository contains my workspace for doing Deep Learning.
 
         jupyter notebook
 
-## How to update the workspace
+## How to update the workspace after an upstream change
+
+1. Get the last changes from upstream
+
+        git pull
+
+2. Activate the environment (if not already activated on this session):
+
+        source activate deep_learning
+
+3. Update the dependencies:
+
+        make install
+
+4. Reactivate the environment:
+
+        source deactivate deep_learning
+        source activate deep_learning
+
+## How to upgrade the packages installed in the workspace
 
 1. Activate the environment (if not already activated on this session):
 
