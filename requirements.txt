@@ -23,7 +23,7 @@ ipython-genutils==0.1.0   # via jupyter-contrib-nbextensions, nbformat, notebook
 ipython==5.2.2
 ipywidgets==5.2.2         # via jupyter
 isort==4.2.5
-Jinja2==2.9.5             # via bokeh, nbconvert, notebook
+jinja2==2.9.5             # via bokeh, nbconvert, notebook
 jsonschema==2.6.0         # via nbformat
 jupyter-client==4.4.0     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.1.0    # via jupyter
@@ -66,7 +66,7 @@ pylint==1.6.5
 pyparsing==2.1.10         # via matplotlib, packaging
 python-dateutil==2.6.0    # via bokeh, matplotlib, pandas
 pytz==2016.10             # via matplotlib, pandas
-pyyaml==3.12              # via bokeh, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras
+PyYAML==3.12              # via bokeh, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras
 pyzmq==16.0.2             # via jupyter-client
 qtconsole==4.2.1          # via jupyter
 requests==2.13.0          # via bokeh
@@ -87,6 +87,7 @@ wcwidth==0.1.7            # via prompt-toolkit
 wheel==0.29.0             # via tensorflow-gpu
 widgetsnbextension==1.2.6  # via ipywidgets
 wrapt==1.10.8             # via astroid
+yapf==0.16.0
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools                # via ipython, jupyter-contrib-core, protobuf

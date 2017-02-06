@@ -14,6 +14,7 @@ jupyter-nbextensions-configurator
 autoflake
 flake8
 autopep8
+yapf
 isort
 pep257
 pylint
