@@ -70,7 +70,12 @@ This repository contains my workspace for doing Deep Learning.
 
         source activate deep_learning
 
-2. Start Jupyter Notebook:
+2. Start Jupyter Notebook with the `start` Makefile's target:
+
+        make start
+        
+    which can be called directly as `make` as it's the default entry, or
+    manually with:
 
         jupyter notebook
 

@@ -1,3 +1,6 @@
+start: in_virtual_env
+	jupyter notebook --browser chromium
+
 install: in_virtual_env
 	pip install -U pip numpy  # Numpy is needed to bootstrap scikit-image installation
 	pip install -r requirements.txt
