@@ -12,12 +12,12 @@ jupyter-nbextensions-configurator
 
 # Linting
 autoflake
-flake8
 autopep8
-yapf
+flake8
 isort
 pep257
 pylint
+yapf
 
 # Scientific libraries
 numpy
