@@ -38,8 +38,7 @@ This repository contains my workspace for doing Deep Learning.
 
 4. Reactivate the environment:
 
-        source deactivate deep_learning
-        source activate deep_learning
+        source deactivate deep_learning; source activate deep_learning
 
 5. GPU support for Jupyter:
 
@@ -91,8 +90,7 @@ This repository contains my workspace for doing Deep Learning.
 
 4. Reactivate the environment:
 
-        source deactivate deep_learning
-        source activate deep_learning
+        source deactivate deep_learning; source activate deep_learning
 
 ### How to upgrade the workspace (upgrading python packages)
 
@@ -106,8 +104,7 @@ This repository contains my workspace for doing Deep Learning.
 
 3. Reactivate the environment:
 
-        source deactivate deep_learning
-        source activate deep_learning
+        source deactivate deep_learning; source activate deep_learning
 
 ## Interesting notebook extensions
 
