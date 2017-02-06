@@ -126,7 +126,6 @@ I recommend installing the following notebook extension:
 - Nbextensions edit menu item
 - Notify
 - Python Markdown
-- Ruler
 - Runtools
 - ScrollDown
 - Skip-Traceback
