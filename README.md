@@ -130,6 +130,7 @@ I recommend installing the following notebook extension:
 - ScrollDown
 - Skip-Traceback
 - spellchecker
+- table_beautifier
 - Table of Contents (2)
 - Tree Filter
 - VIM binding
