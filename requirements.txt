@@ -57,7 +57,7 @@ pillow==4.0.0             # via scikit-image
 pip-tools==1.8.0
 prompt-toolkit==1.0.13    # via ipython, jupyter-console
 protobuf==3.2.0           # via tensorflow-gpu
-psutil==5.1.2             # via jupyter-contrib-nbextensions
+psutil==5.1.3             # via jupyter-contrib-nbextensions
 ptyprocess==0.5.1         # via pexpect, terminado
 pycodestyle==2.3.1        # via flake8
 pyflakes==1.5.0           # via autoflake, flake8
