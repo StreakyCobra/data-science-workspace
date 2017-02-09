@@ -120,7 +120,6 @@ I recommend installing the following notebook extension:
 - Collapsible Headings
 - contrib_nbextensions_help_item
 - Execute time
-- Hinterland
 - Initialization cells
 - Nbextensions dashboard tab
 - Nbextensions edit menu item
