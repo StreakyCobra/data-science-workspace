@@ -12,11 +12,13 @@ bleach==1.5.0             # via nbconvert
 bokeh==0.12.4
 click==6.7                # via pip-tools
 cycler==0.10.0            # via matplotlib
+cython==0.25.2
 dask[array]==0.13.0       # via scikit-image
 decorator==4.0.11         # via ipython, networkx, traitlets
 entrypoints==0.2.2        # via nbconvert
 first==2.0.1              # via pip-tools
 flake8==3.3.0
+fortran-magic==0.7
 html5lib==0.9999999       # via bleach
 ipykernel==4.5.2          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.1.0   # via jupyter-contrib-nbextensions, nbformat, notebook, traitlets

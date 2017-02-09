@@ -9,6 +9,8 @@ keras
 jupyter
 jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator
+cython
+fortran-magic
 
 # Linting
 autoflake
