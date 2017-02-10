@@ -30,15 +30,15 @@ This repository contains my workspace for doing Deep Learning.
 
 2. Activate the environment:
 
-        source activate deep_learning
+        eval $(make setup)
 
 3. Setup the workspace
 
-        make setup
+        make initialize
 
 4. Reactivate the environment:
 
-        source deactivate deep_learning; source activate deep_learning
+        eval $(make setup)
 
 5. GPU support for Jupyter:
 
@@ -68,17 +68,12 @@ This repository contains my workspace for doing Deep Learning.
 
 1. Activate the environment (if not already activated on this session):
 
-        source activate deep_learning
+        eval $(make setup)
 
 2. Start Jupyter Notebook with the `start` Makefile's target:
 
-        make start
+        make
         
-    which can be called directly as `make` as it's the default entry, or
-    manually with:
-
-        jupyter notebook
-
 ### How to update the workspace (after an upstream update)
 
 1. Get the last changes from upstream
@@ -87,29 +82,29 @@ This repository contains my workspace for doing Deep Learning.
 
 2. Activate the environment (if not already activated on this session):
 
-        source activate deep_learning
+        eval $(make setup)
 
 3. Update the dependencies:
 
-        make install
+        make update
 
 4. Reactivate the environment:
 
-        source deactivate deep_learning; source activate deep_learning
+        eval $(make setup)
 
 ### How to upgrade the workspace (upgrading python packages)
 
 1. Activate the environment (if not already activated on this session):
 
-        source activate deep_learning
+        eval $(make setup)
 
-2. Update the dependencies:
+2. Upgrade the dependencies:
 
-        make update
+        make upgrade
 
 3. Reactivate the environment:
 
-        source deactivate deep_learning; source activate deep_learning
+        eval $(make setup)
 
 ## Interesting notebook extensions
 
