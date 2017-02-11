@@ -37,7 +37,7 @@ jupyter-highlight-selected-word==0.0.7  # via jupyter-contrib-nbextensions
 jupyter-latex-envs==1.3.7.1  # via jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator==0.2.3
 jupyter==1.0.0
-keras==1.2.1
+keras==1.2.2
 lazy-object-proxy==1.2.2  # via astroid
 MarkupSafe==0.23          # via jinja2
 matplotlib==2.0.0
