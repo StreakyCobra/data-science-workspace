@@ -32,5 +32,8 @@ matplotlib
 seaborn
 bokeh
 
+# Utils
+xlrd
+
 # Workspace tools
 pip-tools
