@@ -25,14 +25,14 @@ ipython-genutils==0.1.0   # via jupyter-contrib-nbextensions, nbformat, notebook
 ipython==5.2.2
 ipywidgets==5.2.2         # via jupyter
 isort==4.2.5
-Jinja2==2.9.5             # via bokeh, nbconvert, notebook
+jinja2==2.9.5             # via bokeh, nbconvert, notebook
 jsonschema==2.6.0         # via nbformat
 jupyter-client==4.4.0     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.1.0    # via jupyter
 jupyter-contrib-core==0.3.0  # via jupyter-contrib-nbextensions, jupyter-nbextensions-configurator
 jupyter-contrib-nbextensions==0.2.4
-jupyter-core==4.2.1       # via jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
-jupyter-core==4.2.1       # via jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
+jupyter-core==4.3.0       # via jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
+jupyter-core==4.3.0       # via jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
 jupyter-highlight-selected-word==0.0.8  # via jupyter-contrib-nbextensions
 jupyter-latex-envs==1.3.7.1  # via jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator==0.2.3
@@ -69,7 +69,7 @@ pylint==1.6.5
 pyparsing==2.1.10         # via matplotlib, packaging
 python-dateutil==2.6.0    # via bokeh, matplotlib, pandas
 pytz==2016.10             # via matplotlib, pandas
-PyYAML==3.12              # via bokeh, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras
+pyyaml==3.12              # via bokeh, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras
 pyzmq==16.0.2             # via jupyter-client
 qtconsole==4.2.1          # via jupyter
 requests==2.13.0          # via bokeh
@@ -79,7 +79,7 @@ scipy==0.18.1             # via seaborn, theano
 seaborn==0.7.1
 simplegeneric==0.8.1      # via ipython
 six==1.10.0               # via astroid, bleach, bokeh, cycler, html5lib, keras, matplotlib, packaging, pip-tools, prompt-toolkit, protobuf, pylint, python-dateutil, scikit-image, setuptools, tensorflow-gpu, theano, traitlets
-tensorflow-gpu==0.12.1
+tensorflow-gpu==1.0.0
 terminado==0.6            # via notebook
 testpath==0.3             # via nbconvert
 theano==0.8.2             # via keras
