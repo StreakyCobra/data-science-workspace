@@ -1,3 +1,6 @@
+# Set the shell
+SHELL := /usr/bin/zsh
+
 # Default target
 default: jupyter
 
