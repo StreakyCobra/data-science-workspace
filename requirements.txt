@@ -25,7 +25,7 @@ ipython-genutils==0.2.0   # via jupyter-contrib-nbextensions, nbformat, notebook
 ipython==5.3.0
 ipywidgets==6.0.0         # via jupyter
 isort==4.2.5
-Jinja2==2.9.5             # via bokeh, nbconvert, notebook
+jinja2==2.9.5             # via bokeh, nbconvert, notebook
 jsonschema==2.6.0         # via nbformat
 jupyter-client==5.0.0     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.1.0    # via jupyter
@@ -39,7 +39,7 @@ jupyter-nbextensions-configurator==0.2.4
 jupyter==1.0.0
 keras==2.0.2
 lazy-object-proxy==1.2.2  # via astroid
-MarkupSafe==1.0           # via jinja2
+markupsafe==1.0           # via jinja2
 matplotlib==2.0.0
 mccabe==0.6.1             # via flake8, pylint
 mistune==0.7.4            # via nbconvert
@@ -68,7 +68,7 @@ pylint==1.6.5
 pyparsing==2.2.0          # via matplotlib, packaging
 python-dateutil==2.6.0    # via bokeh, jupyter-client, matplotlib, pandas
 pytz==2016.10             # via matplotlib, pandas
-PyYAML==3.12              # via bokeh, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras
+pyyaml==3.12              # via bokeh, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras
 pyzmq==16.0.2             # via jupyter-client
 qtconsole==4.2.1          # via jupyter
 requests==2.13.0          # via bokeh
