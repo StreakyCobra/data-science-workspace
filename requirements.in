@@ -9,6 +9,7 @@ keras
 jupyter
 jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator
+nbdime
 cython
 fortran-magic
 
