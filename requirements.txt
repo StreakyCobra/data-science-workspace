@@ -14,28 +14,26 @@ click==6.7                # via pip-tools
 colorama==0.3.7           # via nbdime
 cycler==0.10.0            # via matplotlib
 cython==0.25.2
-dask[array]==0.14.1       # via scikit-image
 decorator==4.0.11         # via ipython, networkx, traitlets
 entrypoints==0.2.2        # via nbconvert
 first==2.0.1              # via pip-tools
 flake8==3.3.0
 fortran-magic==0.7
 html5lib==0.999999999     # via bleach
-ipykernel==4.5.2          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
-ipython-genutils==0.2.0   # via jupyter-contrib-nbextensions, nbformat, notebook, traitlets
+ipykernel==4.6.0          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
+ipython-genutils==0.2.0   # via jupyter-contrib-nbextensions, nbformat, notebook, qtconsole, traitlets
 ipython==5.3.0
 ipywidgets==6.0.0         # via jupyter
 isort==4.2.5
-jinja2==2.9.5             # via bokeh, nbconvert, notebook
+jinja2==2.9.6             # via bokeh, nbconvert, notebook
 jsonschema==2.6.0         # via nbformat
-jupyter-client==5.0.0     # via ipykernel, jupyter-console, notebook, qtconsole
+jupyter-client==5.0.1     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.1.0    # via jupyter
 jupyter-contrib-core==0.3.0  # via jupyter-contrib-nbextensions, jupyter-nbextensions-configurator
 jupyter-contrib-nbextensions==0.2.6
 jupyter-core==4.3.0       # via jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
-jupyter-core==4.3.0       # via jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
-jupyter-highlight-selected-word==0.0.10  # via jupyter-contrib-nbextensions
-jupyter-latex-envs==1.3.8.2  # via jupyter-contrib-nbextensions
+jupyter-highlight-selected-word==0.0.11  # via jupyter-contrib-nbextensions
+jupyter-latex-envs==1.3.8.4  # via jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator==0.2.4
 jupyter==1.0.0
 keras==2.0.2
@@ -48,7 +46,7 @@ nbconvert==5.1.1          # via jupyter, jupyter-contrib-nbextensions, jupyter-l
 nbdime==0.2.0
 nbformat==4.3.0           # via ipywidgets, nbconvert, nbdime, notebook
 networkx==1.11            # via scikit-image
-notebook==4.4.1           # via jupyter, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, widgetsnbextension
+notebook==5.0.0           # via jupyter, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, widgetsnbextension
 numpy==1.12.1
 olefile==0.44             # via pillow
 packaging==16.8           # via setuptools
@@ -57,11 +55,11 @@ pandocfilters==1.4.1      # via nbconvert
 pep257==0.7.0
 pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
-pillow==4.0.0             # via scikit-image
-pip-tools==1.8.1
-prompt-toolkit==1.0.13    # via ipython, jupyter-console
+pillow==4.1.0             # via scikit-image
+pip-tools==1.8.2
+prompt-toolkit==1.0.14    # via ipython, jupyter-console
 protobuf==3.2.0           # via tensorflow-gpu
-psutil==5.2.0             # via jupyter-contrib-nbextensions
+psutil==5.2.1             # via jupyter-contrib-nbextensions
 ptyprocess==0.5.1         # via pexpect, terminado
 pycodestyle==2.3.1        # via autopep8, flake8
 pyflakes==1.5.0           # via autoflake, flake8
@@ -69,14 +67,15 @@ pygments==2.2.0           # via ipython, jupyter-console, nbconvert, qtconsole
 pylint==1.6.5
 pyparsing==2.2.0          # via matplotlib, packaging
 python-dateutil==2.6.0    # via bokeh, jupyter-client, matplotlib, pandas
-pytz==2016.10             # via matplotlib, pandas
+pytz==2017.2              # via matplotlib, pandas
+pywavelets==0.5.2         # via scikit-image
 pyyaml==3.12              # via bokeh, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras
 pyzmq==16.0.2             # via jupyter-client
-qtconsole==4.2.1          # via jupyter
+qtconsole==4.3.0          # via jupyter
 requests==2.13.0          # via bokeh, nbdime
-scikit-image==0.12.3
+scikit-image==0.13.0
 scikit-learn==0.18.1
-scipy==0.19.0             # via seaborn, theano
+scipy==0.19.0             # via scikit-image, seaborn, theano
 seaborn==0.7.1
 simplegeneric==0.8.1      # via ipython
 six==1.10.0               # via astroid, bleach, bokeh, cycler, html5lib, keras, matplotlib, nbdime, packaging, pip-tools, prompt-toolkit, protobuf, pylint, python-dateutil, scikit-image, setuptools, tensorflow-gpu, theano, traitlets
@@ -84,8 +83,7 @@ tensorflow-gpu==1.0.1
 terminado==0.6            # via notebook
 testpath==0.3             # via nbconvert
 theano==0.9.0             # via keras
-toolz==0.8.2              # via dask
-tornado==4.4.2            # via bokeh, ipykernel, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, nbdime, notebook, terminado
+tornado==4.4.3            # via bokeh, ipykernel, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, nbdime, notebook, terminado
 traitlets==4.3.2          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-core, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
 wcwidth==0.1.7            # via prompt-toolkit
 webencodings==0.5         # via html5lib
