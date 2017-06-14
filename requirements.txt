@@ -55,7 +55,7 @@ networkx==1.11            # via scikit-image
 notebook==5.0.0           # via jupyter, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, widgetsnbextension
 numpy==1.13.0
 olefile==0.44             # via pillow
-pandas==0.20.2
+pandas==0.19.2
 pandocfilters==1.4.1      # via nbconvert
 pep257==0.7.0
 pexpect==4.2.1            # via ipython

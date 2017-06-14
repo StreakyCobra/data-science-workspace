@@ -24,7 +24,7 @@ yapf
 
 # Scientific libraries
 numpy
-pandas
+pandas==0.19.2
 scikit-learn
 scikit-image
 
