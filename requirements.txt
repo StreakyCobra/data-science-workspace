@@ -45,7 +45,7 @@ jupyter-nbextensions-configurator==0.2.5
 jupyter==1.0.0
 keras==2.0.5
 lazy-object-proxy==1.3.1  # via astroid
-markdown==2.2.0           # via tensorflow-gpu
+markdown==2.6.8           # via tensorflow-gpu
 markupsafe==1.0           # via jinja2
 matplotlib==2.0.2
 mccabe==0.6.1             # via flake8, pylint
@@ -62,7 +62,7 @@ pandocfilters==1.4.1      # via nbconvert
 pep257==0.7.0
 pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
-pillow==4.1.1             # via scikit-image
+pillow==4.2.0             # via scikit-image
 pip-tools==1.9.0
 prompt-toolkit==1.0.14    # via ipython, jupyter-console
 protobuf==3.3.0           # via tensorflow-gpu
@@ -87,7 +87,7 @@ seaborn==0.7.1
 simplegeneric==0.8.1      # via ipython
 six==1.10.0               # via astroid, bkcharts, bleach, bokeh, cycler, html5lib, keras, matplotlib, nbdime, pip-tools, prompt-toolkit, protobuf, pylint, python-dateutil, scikit-image, tensorflow-gpu, theano, traitlets
 smmap2==2.0.3             # via gitdb2
-tensorflow-gpu==1.2.0
+tensorflow-gpu==1.2.1
 terminado==0.6            # via notebook
 testpath==0.3.1           # via nbconvert
 theano==0.9.0             # via keras
