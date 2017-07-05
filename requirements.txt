@@ -19,6 +19,7 @@ cycler==0.10.0            # via matplotlib
 cython==0.25.2
 decorator==4.0.11         # via ipython, networkx, traitlets
 entrypoints==0.2.3        # via nbconvert
+findspark==1.1.0
 first==2.0.1              # via pip-tools
 flake8==3.3.0
 fortran-magic==0.7

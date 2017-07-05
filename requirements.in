@@ -1,9 +1,12 @@
-# Better python interpreter
+# Python interpreter
 ipython
 
-# Deep Learning libraries
+# Deep Learning
 tensorflow-gpu
 keras
+
+# Spark
+findspark
 
 # Jupyter notebook
 jupyter
@@ -13,7 +16,7 @@ nbdime
 cython
 fortran-magic
 
-# Linting
+# Linting and Formatting
 autoflake
 autopep8
 flake8

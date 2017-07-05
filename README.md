@@ -1,13 +1,14 @@
 # Deep Learning Workspace
 
-This repository contains my workspace for doing Deep Learning.
+This repository contains a workspace for doing Deep Learning.
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+
 **Table of Contents**
 
 - [Deep Learning Workspace](#deep-learning-workspace)
+    - [Requirements](#requirements)
     - [Installation and setup](#installation-and-setup)
-        - [Requirements](#requirements)
         - [How to set-up the workspace the first time](#how-to-set-up-the-workspace-the-first-time)
         - [How to use the workspace](#how-to-use-the-workspace)
         - [How to update the workspace (after an upstream update)](#how-to-update-the-workspace-after-an-upstream-update)
@@ -16,11 +17,12 @@ This repository contains my workspace for doing Deep Learning.
 
 <!-- markdown-toc end -->
  
+## Requirements
+
+* [Anaconda](https://www.continuum.io/downloads)
+* [Apache Spark](https://spark.apache.org/) (with hadoop)
+
 ## Installation and setup
-
-### Requirements
-
-* [anaconda](https://www.continuum.io/downloads)
 
 ### How to set-up the workspace the first time
 
@@ -70,7 +72,12 @@ This repository contains my workspace for doing Deep Learning.
 
         eval $(make setup)
 
-2. Start Jupyter Notebook with the `start` Makefile's target:
+2. Set Spark environment variables
+
+        export SPARK_HOME=/opt/spark
+        export PATH=$SPARK_HOME/bin:$PATH
+
+3. Start Jupyter Notebook with the `start` Makefile's target:
 
         make
         
