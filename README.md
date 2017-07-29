@@ -2,8 +2,7 @@
 
 This repository contains a workspace for doing Deep Learning.
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
 - [Deep Learning Workspace](#deep-learning-workspace)
@@ -13,10 +12,11 @@ This repository contains a workspace for doing Deep Learning.
         - [How to use the workspace](#how-to-use-the-workspace)
         - [How to update the workspace (after an upstream update)](#how-to-update-the-workspace-after-an-upstream-update)
         - [How to upgrade the workspace (upgrading python packages)](#how-to-upgrade-the-workspace-upgrading-python-packages)
+    - [Facets](#facets)
     - [Interesting notebook extensions](#interesting-notebook-extensions)
 
 <!-- markdown-toc end -->
- 
+
 ## Requirements
 
 * [Anaconda](https://www.continuum.io/downloads)
@@ -112,6 +112,21 @@ This repository contains a workspace for doing Deep Learning.
 3. Reactivate the environment:
 
         eval $(make setup)
+
+## Facets
+
+[Facets](https://github.com/PAIR-code/facets) is a tool for the visual
+exploration of datasets. It can be installed as following:
+
+    git submodule update
+    jupyter nbextension install facets/facets-dist/ --user
+    
+Then jupyter notebook should be started with an additionnal command line option:
+
+    --NotebookApp.iopub_data_rate_limit=10000000
+    
+The visualization can then be loaded as explained in
+the [demo notebook](https://github.com/PAIR-code/facets/blob/master/facets_dive/Dive_demo.ipynb)
 
 ## Interesting notebook extensions
 

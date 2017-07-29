@@ -1,3 +1,6 @@
 [submodule "course_fast_ai"]
 	path = course_fast_ai
 	url = https://github.com/fastai/courses.git
+[submodule "facets"]
+	path = facets
+	url = https://github.com/PAIR-code/facets
