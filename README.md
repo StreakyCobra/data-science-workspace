@@ -66,6 +66,11 @@ This repository contains a workspace for doing Deep Learning.
             ]
         }
 
+6. Load the submodules
+
+        git submodule init
+        git submodule update
+
 ### How to use the workspace
 
 1. Activate the environment (if not already activated on this session):
@@ -98,6 +103,11 @@ This repository contains a workspace for doing Deep Learning.
 4. Reactivate the environment:
 
         eval $(make setup)
+
+5. Update submodules
+
+        git submodule init
+        git submodule update
 
 ### How to upgrade the workspace (upgrading python packages)
 
