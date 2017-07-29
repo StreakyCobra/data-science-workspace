@@ -128,7 +128,6 @@ This repository contains a workspace for doing Deep Learning.
 [Facets](https://github.com/PAIR-code/facets) is a tool for the visual
 exploration of datasets. It can be installed as following:
 
-    git submodule update
     jupyter nbextension install facets/facets-dist/ --user
     
 Then jupyter notebook should be started with an additionnal command line option:
@@ -136,7 +135,7 @@ Then jupyter notebook should be started with an additionnal command line option:
     --NotebookApp.iopub_data_rate_limit=10000000
     
 The visualization can then be loaded as explained in
-the [demo notebook](https://github.com/PAIR-code/facets/blob/master/facets_dive/Dive_demo.ipynb)
+the [demo notebook](https://github.com/PAIR-code/facets/blob/master/facets_dive/Dive_demo.ipynb).
 
 ## Interesting notebook extensions
 
