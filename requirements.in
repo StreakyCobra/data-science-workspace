@@ -1,5 +1,6 @@
 # Python interpreter
 ipython
+ipdb
 
 # Deep Learning
 tensorflow-gpu

@@ -26,6 +26,7 @@ gitdb2==2.0.3             # via gitpython
 gitpython==2.1.7          # via nbdime
 html5lib==0.9999999       # via bleach, tensorflow-tensorboard
 idna==2.6                 # via requests
+ipdb==0.10.3
 ipykernel==4.6.1          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via jupyter-contrib-nbextensions, nbformat, notebook, qtconsole, traitlets
 ipython==6.2.1
