@@ -10,7 +10,7 @@ setup:
 
 # Run jupyter
 jupyter: in_virtual_env
-	jupyter notebook --browser chromium
+	jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000
 
 # Initialize the environment
 initialize: in_virtual_env
