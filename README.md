@@ -1,11 +1,12 @@
-# Deep Learning Workspace
+# Python Data Science Workspace
 
-This repository contains a workspace for doing Deep Learning.
+This repository contains a Workspace for doing Data Science in Python.
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [Deep Learning Workspace](#deep-learning-workspace)
+<!-- TOC -->
+
+- [Python Data Science Workspace](#python-data-science-workspace)
     - [Requirements](#requirements)
     - [Installation and setup](#installation-and-setup)
         - [How to set-up the workspace the first time](#how-to-set-up-the-workspace-the-first-time)
@@ -15,7 +16,7 @@ This repository contains a workspace for doing Deep Learning.
     - [Facets](#facets)
     - [Interesting notebook extensions](#interesting-notebook-extensions)
 
-<!-- markdown-toc end -->
+<!-- /TOC -->
 
 ## Requirements
 
@@ -28,7 +29,7 @@ This repository contains a workspace for doing Deep Learning.
 
 1. If not already existing, create a conda environment:
 
-        conda create -n deep_learning python=3.5
+        conda create -n data_science python=3.5
 
 2. Activate the environment:
 
@@ -58,7 +59,7 @@ This repository contains a workspace for doing Deep Learning.
             "display_name": "Python 3",
             "argv": [
                 "optirun",
-                "/home/fabien/.conda/envs/deep_learning/bin/python",
+                "/home/fabien/.conda/envs/data_science/bin/python",
                 "-m",
                 "ipykernel",
                 "-f",

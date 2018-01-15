@@ -6,7 +6,7 @@ default: jupyter
 
 # Setup the environment
 setup:
-	@echo 'source deactivate deep_learning; source activate deep_learning;'
+	@echo 'source deactivate data_science; source activate data_science;'
 
 # Run jupyter
 jupyter: in_virtual_env
