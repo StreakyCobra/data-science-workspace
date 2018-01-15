@@ -1,4 +1,4 @@
-# Python interpreter
+# Python interpreter/debugger
 ipython
 ipdb
 
@@ -28,7 +28,7 @@ yapf
 
 # Scientific libraries
 numpy
-pandas==0.19.2
+pandas
 scikit-learn
 scikit-image
 
