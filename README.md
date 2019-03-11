@@ -1,26 +1,11 @@
 # Python Data Science Workspace
 
-This repository contains a Workspace for doing Data Science in Python.
-
-**Table of Contents**
-
-<!-- TOC -->
-
-- [Python Data Science Workspace](#python-data-science-workspace)
-    - [Requirements](#requirements)
-    - [Installation and setup](#installation-and-setup)
-        - [How to set-up the workspace the first time](#how-to-set-up-the-workspace-the-first-time)
-        - [How to use the workspace](#how-to-use-the-workspace)
-        - [How to update the workspace (after an upstream update)](#how-to-update-the-workspace-after-an-upstream-update)
-        - [How to upgrade the workspace (upgrading python packages)](#how-to-upgrade-the-workspace-upgrading-python-packages)
-    - [Facets](#facets)
-    - [Interesting notebook extensions](#interesting-notebook-extensions)
-
-<!-- /TOC -->
+This repository contains my workspace for doing Data Science in Python.
 
 ## Requirements
 
-* [Anaconda](https://www.continuum.io/downloads)
+* [Anaconda](https://www.continuum.io/downloads) or
+  [Miniconda](https://conda.io/en/latest/miniconda.html)
 * [Apache Spark](https://spark.apache.org/) (with hadoop)
 
 ## Installation and setup
@@ -29,45 +14,26 @@ This repository contains a Workspace for doing Data Science in Python.
 
 1. If not already existing, create a conda environment:
 
-        conda create -n data_science python=3.5
+        conda create -n data_science python=3.7
 
 2. Activate the environment:
 
-        eval $(make setup)
+        source activate data_science
 
-3. Setup the workspace
+3. Setup the workspace:
 
-        make initialize
+        pip install -U pip numpy
+        pip install -r requirements.txt
+        python -m ipykernel install --user
+        jupyter contrib nbextension install --user
+        jupyter nbextensions_configurator enable --user
 
 4. Reactivate the environment:
 
-        eval $(make setup)
+        source deactivate data_science
+        source activate data_science
 
-5. GPU support for Jupyter:
-
-    For computers on linux with optimus, you have to make a kernel that will be
-    called with "optirun" to be able to use GPU acceleration. For this go to the
-    following folder:
-
-        cd ~/.local/share/jupyter/kernels/
-
-    then edit the file `python3/kernel.json` in order to add `"optirun"` as
-    first entry into the `argv` array:
-
-        {
-            "language": "python",
-            "display_name": "Python 3",
-            "argv": [
-                "optirun",
-                "/home/fabien/.conda/envs/data_science/bin/python",
-                "-m",
-                "ipykernel",
-                "-f",
-                "{connection_file}"
-            ]
-        }
-
-6. Load the submodules
+5. Load the submodules:
 
         git submodule init
         git submodule update
@@ -76,36 +42,37 @@ This repository contains a Workspace for doing Data Science in Python.
 
 1. Activate the environment (if not already activated on this session):
 
-        eval $(make setup)
+        source activate data_science
 
-2. Set Spark environment variables
+2. Set Spark environment variables:
 
         export SPARK_HOME=/opt/spark
         export PATH=$SPARK_HOME/bin:$PATH
 
-3. Start Jupyter Notebook with the `start` Makefile's target:
+3. Start Jupyter Notebook:
 
-        make
-        
+        jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000
+
 ### How to update the workspace (after an upstream update)
 
-1. Get the last changes from upstream
+1. Get the last changes from upstream:
 
         git pull
 
 2. Activate the environment (if not already activated on this session):
 
-        eval $(make setup)
+        source activate data_science
 
 3. Update the dependencies:
 
-        make update
+        pip install -r requirements.txt
 
 4. Reactivate the environment:
 
-        eval $(make setup)
+        source deactivate data_science
+        source activate data_science
 
-5. Update submodules
+5. Update submodules:
 
         git submodule init
         git submodule update
@@ -114,15 +81,17 @@ This repository contains a Workspace for doing Data Science in Python.
 
 1. Activate the environment (if not already activated on this session):
 
-        eval $(make setup)
+        source activate data_science
 
 2. Upgrade the dependencies:
 
-        make upgrade
+        pip-compile --upgrade
+        pip install -r requirements.txt
 
 3. Reactivate the environment:
 
-        eval $(make setup)
+        source deactivate data_science
+        source activate data_science
 
 ## Facets
 
@@ -130,13 +99,39 @@ This repository contains a Workspace for doing Data Science in Python.
 exploration of datasets. It can be installed as following:
 
     jupyter nbextension install facets/facets-dist/ --user
-    
-Then jupyter notebook should be started with an additionnal command line option:
+
+Then jupyter notebook should be started with an additional command line option:
 
     --NotebookApp.iopub_data_rate_limit=10000000
-    
+
 The visualization can then be loaded as explained in
 the [demo notebook](https://github.com/PAIR-code/facets/blob/master/facets_dive/Dive_demo.ipynb).
+
+## Troubleshooting
+
+### GPU support for Jupyter
+
+For computers on linux with optimus, you have to make a kernel that will be
+called with "optirun" to be able to use GPU acceleration. For this go to the
+following folder:
+
+        cd ~/.local/share/jupyter/kernels/
+
+then edit the file `python3/kernel.json` in order to add `"optirun"` as first
+entry into the `argv` array:
+
+        {
+                "language": "python",
+                "display_name": "Python 3",
+                "argv": [
+                "optirun",
+                "/home/fabien/.conda/envs/data_science/bin/python",
+                "-m",
+                "ipykernel",
+                "-f",
+                "{connection_file}"
+                ]
+        }
 
 ## Interesting notebook extensions
 
