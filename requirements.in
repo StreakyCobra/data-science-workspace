@@ -2,12 +2,20 @@
 ipython
 ipdb
 
-# Deep Learning
-tensorflow-gpu
-keras
-
-# Spark
-findspark
+# Linting, Formatting and Tooling
+black
+flake8
+isort
+mypy
+pip-tools
+pre-commit
+ptvsd
+pydocstyle
+pylint
+python-dotenv
+rope
+safety
+watchdog
 
 # Jupyter notebook
 jupyter
@@ -17,28 +25,17 @@ nbdime
 cython
 fortran-magic
 
-# Linting and Formatting
-autoflake
-autopep8
-flake8
-isort
-pep257
-pylint
-yapf
-
 # Scientific libraries
+datashader
+findspark
+keras
 numpy
 pandas
-scikit-learn
 scikit-image
+scikit-learn
+tensorflow-gpu
 
 # Plotting libraries
+bokeh
 matplotlib
 seaborn
-bokeh
-
-# Utils
-xlrd
-
-# Workspace tools
-pip-tools
