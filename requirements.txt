@@ -4,7 +4,7 @@
 #
 #    pip-compile --upgrade
 #
-absl-py==0.7.0            # via tensorboard, tensorflow-estimator, tensorflow-gpu
+absl-py==0.7.1            # via tensorboard, tensorflow-estimator, tensorflow-gpu
 appdirs==1.4.3            # via black
 argh==0.26.2              # via watchdog
 aspy.yaml==1.2.0          # via pre-commit
@@ -12,24 +12,24 @@ astor==0.7.1              # via tensorflow-gpu
 astroid==2.2.5            # via pylint
 attrs==19.1.0             # via black, jsonschema
 backcall==0.1.0           # via ipython
-black==18.9b0
+black==19.3b0
 bleach==3.1.0             # via nbconvert
-bokeh==1.0.4
+bokeh==1.1.0
 certifi==2019.3.9         # via requests
-cfgv==1.5.0               # via pre-commit
+cfgv==1.6.0               # via pre-commit
 chardet==3.0.4            # via requests
 click==7.0                # via black, distributed, pip-tools, safety
-cloudpickle==0.8.0        # via dask, distributed, scikit-image
+cloudpickle==1.0.0        # via dask, distributed
 colorama==0.4.1           # via nbdime
-colorcet==1.0.1           # via datashader
+colorcet==2.0.1           # via datashader
 cycler==0.10.0            # via matplotlib
-cython==0.29.6
-dask[array,complete]==1.1.4  # via datashader, distributed, scikit-image
-datashader==0.6.9
+cython==0.29.7
+dask[complete]==1.2.1     # via datashader, distributed
+datashader==0.7.0
 datashape==0.5.2          # via datashader
-decorator==4.3.2          # via ipython, networkx, traitlets
-defusedxml==0.5.0         # via nbconvert
-distributed==1.26.0       # via dask
+decorator==4.4.0          # via ipython, networkx, traitlets
+defusedxml==0.6.0         # via nbconvert
+distributed==1.27.1       # via dask
 dparse==0.4.1             # via safety
 entrypoints==0.3          # via flake8, nbconvert
 findspark==1.3.0
@@ -38,20 +38,21 @@ fortran-magic==0.7
 gast==0.2.2               # via tensorflow-gpu
 gitdb2==2.0.5             # via gitpython
 gitpython==2.1.11         # via nbdime
-grpcio==1.19.0            # via tensorboard, tensorflow-gpu
+grpcio==1.20.1            # via tensorboard, tensorflow-gpu
 h5py==2.9.0               # via keras, keras-applications
 heapdict==1.0.0           # via zict
-identify==1.4.0           # via pre-commit
+identify==1.4.2           # via pre-commit
 idna==2.8                 # via requests
-importlib-metadata==0.8   # via pre-commit
-ipdb==0.11
+imageio==2.5.0            # via scikit-image
+importlib-metadata==0.9   # via pre-commit
+ipdb==0.12
 ipykernel==5.1.0          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via jupyter-contrib-nbextensions, nbformat, notebook, qtconsole, traitlets
-ipython==7.3.0
+ipython==7.5.0
 ipywidgets==7.4.2         # via jupyter
-isort==4.3.15
+isort==4.3.18
 jedi==0.13.3              # via ipython
-jinja2==2.10              # via bokeh, nbconvert, nbdime, notebook
+jinja2==2.10.1            # via bokeh, nbconvert, nbdime, notebook
 jsonschema==3.0.1         # via nbformat
 jupyter-client==5.2.4     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==6.0.0    # via jupyter
@@ -65,47 +66,46 @@ jupyter==1.0.0
 keras-applications==1.0.7  # via keras, tensorflow-gpu
 keras-preprocessing==1.0.9  # via keras, tensorflow-gpu
 keras==2.2.4
-kiwisolver==1.0.1         # via matplotlib
+kiwisolver==1.1.0         # via matplotlib
 lazy-object-proxy==1.3.1  # via astroid
-llvmlite==0.27.1          # via numba
+llvmlite==0.28.0          # via numba
 locket==0.2.0             # via partd
-lxml==4.3.2               # via jupyter-contrib-nbextensions
-markdown==3.0.1           # via tensorboard
+lxml==4.3.3               # via jupyter-contrib-nbextensions
+markdown==3.1             # via tensorboard
 markupsafe==1.1.1         # via jinja2
 matplotlib==3.0.3
 mccabe==0.6.1             # via flake8, pylint
 mistune==0.8.4            # via nbconvert
-mock==2.0.0               # via tensorflow-estimator
+mock==3.0.4               # via tensorflow-estimator
 msgpack==0.6.1            # via distributed
 multipledispatch==0.6.0   # via datashape
 mypy-extensions==0.4.1    # via mypy
-mypy==0.670
-nbconvert==5.4.1          # via jupyter, jupyter-contrib-nbextensions, jupyter-latex-envs, notebook
+mypy==0.701
+nbconvert==5.5.0          # via jupyter, jupyter-contrib-nbextensions, jupyter-latex-envs, notebook
 nbdime==1.0.5
 nbformat==4.4.0           # via ipywidgets, nbconvert, nbdime, notebook
-networkx==2.2             # via scikit-image
+networkx==2.3             # via scikit-image
 nodeenv==1.3.3            # via pre-commit
-notebook==5.7.6           # via jupyter, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbdime, widgetsnbextension
-numba==0.42.1             # via datashader
-numpy==1.16.2
+notebook==5.7.8           # via jupyter, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbdime, widgetsnbextension
+numba==0.43.1             # via datashader
+numpy==1.16.3
 packaging==19.0           # via bokeh, dparse, safety
-pandas==0.24.1
+pandas==0.24.2
 pandocfilters==1.4.2      # via nbconvert
-param==1.8.2              # via colorcet, datashader, pyct
-parso==0.3.4              # via jedi
-partd==0.3.9              # via dask
+param==1.9.0              # via colorcet, datashader, pyct
+parso==0.4.0              # via jedi
+partd==0.3.10             # via dask
 pathtools==0.1.2          # via watchdog
-pbr==5.1.3                # via mock
-pexpect==4.6.0            # via ipython
+pexpect==4.7.0            # via ipython
 pickleshare==0.7.5        # via ipython
-pillow==5.4.1             # via bokeh, datashader, scikit-image
-pip-tools==3.4.0
-pre-commit==1.14.4
+pillow==6.0.0             # via bokeh, datashader, imageio, scikit-image
+pip-tools==3.6.1
+pre-commit==1.16.0
 prometheus-client==0.6.0  # via notebook
 prompt-toolkit==2.0.9     # via ipython, jupyter-console
-protobuf==3.7.0           # via tensorboard, tensorflow-gpu
-psutil==5.6.0             # via distributed
-ptvsd==4.2.4
+protobuf==3.7.1           # via tensorboard, tensorflow-gpu
+psutil==5.6.2             # via distributed
+ptvsd==4.2.8
 ptyprocess==0.6.0         # via pexpect, terminado
 pycodestyle==2.5.0        # via flake8
 pyct[cmd]==0.4.6          # via colorcet, datashader
@@ -113,48 +113,48 @@ pydocstyle==3.0.0
 pyflakes==2.1.1           # via flake8
 pygments==2.3.1           # via ipython, jupyter-console, nbconvert, qtconsole
 pylint==2.3.1
-pyparsing==2.3.1          # via matplotlib, packaging
-pyrsistent==0.14.11       # via jsonschema
+pyparsing==2.4.0          # via matplotlib, packaging
+pyrsistent==0.15.1        # via jsonschema
 python-dateutil==2.8.0    # via bokeh, datashape, jupyter-client, matplotlib, pandas
 python-dotenv==0.10.1
-pytz==2018.9              # via pandas
-pywavelets==1.0.2         # via scikit-image
-pyyaml==3.13              # via aspy.yaml, bokeh, distributed, dparse, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras, pre-commit, pyct, watchdog
+pytz==2019.1              # via pandas
+pywavelets==1.0.3         # via scikit-image
+pyyaml==5.1               # via aspy.yaml, bokeh, distributed, dparse, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras, pre-commit, pyct, watchdog
 pyzmq==18.0.1             # via jupyter-client, notebook
-qtconsole==4.4.3          # via jupyter
+qtconsole==4.4.4          # via jupyter
 requests==2.21.0          # via nbdime, pyct, safety
-rope==0.12.0
+rope==0.14.0
 safety==1.8.5
-scikit-image==0.14.2
+scikit-image==0.15.0
 scikit-learn==0.20.3
 scipy==1.2.1              # via datashader, keras, scikit-image, scikit-learn, seaborn
 seaborn==0.9.0
 send2trash==1.5.0         # via notebook
-six==1.12.0               # via absl-py, astroid, bleach, bokeh, cfgv, cycler, distributed, dparse, grpcio, h5py, jsonschema, keras, keras-preprocessing, mock, multipledispatch, nbdime, packaging, pip-tools, pre-commit, prompt-toolkit, protobuf, pydocstyle, pyrsistent, python-dateutil, scikit-image, tensorboard, tensorflow-estimator, tensorflow-gpu, traitlets
+six==1.12.0               # via absl-py, astroid, bleach, bokeh, cfgv, cycler, distributed, dparse, grpcio, h5py, jsonschema, keras, keras-preprocessing, mock, multipledispatch, nbdime, packaging, pip-tools, pre-commit, prompt-toolkit, protobuf, pydocstyle, pyrsistent, python-dateutil, tensorboard, tensorflow-estimator, tensorflow-gpu, traitlets
 smmap2==2.0.5             # via gitdb2
 snowballstemmer==1.2.1    # via pydocstyle
 sortedcontainers==2.1.0   # via distributed
-tblib==1.3.2              # via distributed
+tblib==1.4.0              # via distributed
 tensorboard==1.13.1       # via tensorflow-gpu
 tensorflow-estimator==1.13.0  # via tensorflow-gpu
 tensorflow-gpu==1.13.1
 termcolor==1.1.0          # via tensorflow-gpu
-terminado==0.8.1          # via notebook
+terminado==0.8.2          # via notebook
 testpath==0.3.1           # via datashader, nbconvert
 toml==0.10.0              # via black, pre-commit
 toolz==0.9.0              # via dask, datashader, distributed, partd
-tornado==6.0.1            # via bokeh, distributed, ipykernel, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, nbdime, notebook, terminado
+tornado==6.0.2            # via bokeh, distributed, ipykernel, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, nbdime, notebook, terminado
 traitlets==4.3.2          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-core, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
-typed-ast==1.3.1          # via astroid, mypy
-urllib3==1.24.1           # via requests
-virtualenv==16.4.3        # via pre-commit
+typed-ast==1.3.5          # via astroid, mypy
+urllib3==1.24.3           # via requests
+virtualenv==16.5.0        # via pre-commit
 watchdog==0.9.0
 wcwidth==0.1.7            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
-werkzeug==0.14.1          # via tensorboard
+werkzeug==0.15.2          # via tensorboard
 wheel==0.33.1             # via tensorboard, tensorflow-gpu
 widgetsnbextension==3.4.2  # via ipywidgets
 wrapt==1.11.1             # via astroid
-xarray==0.11.3            # via datashader
+xarray==0.12.1            # via datashader
 zict==0.1.4               # via distributed
-zipp==0.3.3               # via importlib-metadata
+zipp==0.4.0               # via importlib-metadata
