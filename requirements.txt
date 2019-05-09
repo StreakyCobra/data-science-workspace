@@ -24,12 +24,12 @@ colorama==0.4.1           # via nbdime
 colorcet==2.0.1           # via datashader
 cycler==0.10.0            # via matplotlib
 cython==0.29.7
-dask[complete]==1.2.1     # via datashader, distributed
+dask[complete]==1.2.2     # via datashader, distributed
 datashader==0.7.0
 datashape==0.5.2          # via datashader
 decorator==4.4.0          # via ipython, networkx, traitlets
 defusedxml==0.6.0         # via nbconvert
-distributed==1.27.1       # via dask
+distributed==1.28.0       # via dask
 dparse==0.4.1             # via safety
 entrypoints==0.3          # via flake8, nbconvert
 findspark==1.3.0
@@ -44,7 +44,7 @@ heapdict==1.0.0           # via zict
 identify==1.4.2           # via pre-commit
 idna==2.8                 # via requests
 imageio==2.5.0            # via scikit-image
-importlib-metadata==0.9   # via pre-commit
+importlib-metadata==0.10  # via pre-commit
 ipdb==0.12
 ipykernel==5.1.0          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via jupyter-contrib-nbextensions, nbformat, notebook, qtconsole, traitlets
@@ -67,7 +67,7 @@ keras-applications==1.0.7  # via keras, tensorflow-gpu
 keras-preprocessing==1.0.9  # via keras, tensorflow-gpu
 keras==2.2.4
 kiwisolver==1.1.0         # via matplotlib
-lazy-object-proxy==1.3.1  # via astroid
+lazy-object-proxy==1.4.0  # via astroid
 llvmlite==0.28.0          # via numba
 locket==0.2.0             # via partd
 lxml==4.3.3               # via jupyter-contrib-nbextensions
@@ -76,7 +76,7 @@ markupsafe==1.1.1         # via jinja2
 matplotlib==3.0.3
 mccabe==0.6.1             # via flake8, pylint
 mistune==0.8.4            # via nbconvert
-mock==3.0.4               # via tensorflow-estimator
+mock==3.0.5               # via tensorflow-estimator
 msgpack==0.6.1            # via distributed
 multipledispatch==0.6.0   # via datashape
 mypy-extensions==0.4.1    # via mypy
@@ -100,7 +100,7 @@ pexpect==4.7.0            # via ipython
 pickleshare==0.7.5        # via ipython
 pillow==6.0.0             # via bokeh, datashader, imageio, scikit-image
 pip-tools==3.6.1
-pre-commit==1.16.0
+pre-commit==1.16.1
 prometheus-client==0.6.0  # via notebook
 prompt-toolkit==2.0.9     # via ipython, jupyter-console
 protobuf==3.7.1           # via tensorboard, tensorflow-gpu
@@ -111,7 +111,7 @@ pycodestyle==2.5.0        # via flake8
 pyct[cmd]==0.4.6          # via colorcet, datashader
 pydocstyle==3.0.0
 pyflakes==2.1.1           # via flake8
-pygments==2.3.1           # via ipython, jupyter-console, nbconvert, qtconsole
+pygments==2.4.0           # via ipython, jupyter-console, nbconvert, qtconsole
 pylint==2.3.1
 pyparsing==2.4.0          # via matplotlib, packaging
 pyrsistent==0.15.1        # via jsonschema
@@ -152,9 +152,9 @@ watchdog==0.9.0
 wcwidth==0.1.7            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
 werkzeug==0.15.2          # via tensorboard
-wheel==0.33.1             # via tensorboard, tensorflow-gpu
+wheel==0.33.2             # via tensorboard, tensorflow-gpu
 widgetsnbextension==3.4.2  # via ipywidgets
 wrapt==1.11.1             # via astroid
 xarray==0.12.1            # via datashader
 zict==0.1.4               # via distributed
-zipp==0.4.0               # via importlib-metadata
+zipp==0.5.0               # via importlib-metadata
