@@ -27,6 +27,8 @@ This repository contains my workspace for doing Data Science in Python.
         python -m ipykernel install --user
         jupyter contrib nbextension install --user
         jupyter nbextensions_configurator enable --user
+        jupyter nbextension install https://github.com/drillan/jupyter-black/archive/master.zip --user
+        jupyter nbextension enable jupyter-black-master/jupyter-black
 
 4. Reactivate the environment:
 
@@ -143,6 +145,7 @@ I recommend installing the following notebook extension:
 - contrib_nbextensions_help_item
 - Execute time
 - Initialization cells
+- Jupyter Black
 - Nbextensions dashboard tab
 - Nbextensions edit menu item
 - Notify
