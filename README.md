@@ -25,10 +25,32 @@ This repository contains my workspace for doing Data Science in Python.
         pip install -U pip numpy
         pip install -r requirements.txt
         python -m ipykernel install --user
+
+4. Setup jupyter notebooks
+
         jupyter contrib nbextension install --user
         jupyter nbextensions_configurator enable --user
         jupyter nbextension install https://github.com/drillan/jupyter-black/archive/master.zip --user
         jupyter nbextension enable jupyter-black-master/jupyter-black
+
+4. Setup jupyter lab
+
+        jupyter labextension install jupyter-leaflet
+        jupyter labextension install @jupyter-widgets/jupyterlab-manager
+        jupyter labextension install @krassowski/jupyterlab_go_to_definition
+        jupyter labextension install jupyterlab_bokeh
+        jupyter labextension install ipysheet
+        jupyter labextension install jupyterlab-drawio
+        jupyter labextension install @jupyterlab/toc
+        jupyter labextension install jupyterlab_vim
+
+        jupyter labextension install @jupyterlab/git
+        pip install jupyterlab-git
+        jupyter serverextension enable --py jupyterlab_git
+
+        jupyter labextension install @ryantam626/jupyterlab_code_formatter
+        pip install jupyterlab_code_formatter
+        jupyter serverextension enable --py jupyterlab_code_formatter
 
 4. Reactivate the environment:
 

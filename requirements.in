@@ -19,6 +19,7 @@ watchdog
 
 # Jupyter notebook
 jupyter
+jupyterlab
 jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator
 nbdime
@@ -35,7 +36,12 @@ scikit-image
 scikit-learn
 tensorflow-gpu
 
-# Plotting libraries
+# Databases
+pymongo
+
+# Visualisation libraries
 bokeh
+ipyleaflet
+ipysheet
 matplotlib
 seaborn
