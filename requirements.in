@@ -26,6 +26,7 @@ jupyter-nbextensions-configurator
 nbdime
 cython
 fortran-magic
+yappi
 
 # Scientific libraries
 datashader
