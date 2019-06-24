@@ -6,6 +6,7 @@ ipdb
 black
 flake8
 isort
+line_profiler
 mypy
 nose
 pip-tools
