@@ -48,3 +48,4 @@ ipyleaflet
 ipysheet
 matplotlib
 seaborn
+tqdm
