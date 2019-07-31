@@ -48,4 +48,7 @@ ipyleaflet
 ipysheet
 matplotlib
 seaborn
+
+# Useful libraries
+dateparser
 tqdm
