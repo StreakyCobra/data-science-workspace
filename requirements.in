@@ -51,4 +51,5 @@ seaborn
 
 # Useful libraries
 dateparser
+humanize
 tqdm
