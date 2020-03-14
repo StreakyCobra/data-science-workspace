@@ -1,0 +1,12 @@
+version: "2.4"
+
+services:
+
+  data-science-workspace:
+    image: streakycobra/data-science-workspace:latest
+    build: .
+    runtime: nvidia
+    network_mode: host
+    command: ["bash", "-c", "source /etc/bash.bashrc && jupyter lab --NotebookApp.password='${NB_PASSWORD}' --ip 0.0.0.0 --no-browser --allow-root"]
+    volumes:
+      - $HOME:/home/workspace/home

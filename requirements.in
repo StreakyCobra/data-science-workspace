@@ -1,55 +1,59 @@
 # Python interpreter/debugger
-ipython
+cython
 ipdb
+ipython
+numba
 
 # Linting, Formatting and Tooling
 black
-flake8
 isort
-line_profiler
 mypy
-nose
 pip-tools
-pre-commit
-ptvsd
-pydocstyle
-pylint
 python-dotenv
-rope
-safety
-watchdog
 
 # Jupyter notebook
 jupyter
-jupyterlab
-jupyter-contrib-nbextensions
-jupyter-nbextensions-configurator
+jupyterlab==1.2.0
 nbdime
-cython
-fortran-magic
-yappi
 
 # Scientific libraries
-datashader
+dask
 findspark
-keras
 numpy
 pandas
 scikit-image
 scikit-learn
-tensorflow-gpu
+scipy
+statsmodels
+sympy
+tensorflow-gpu==2.0.1
+
+# GIS libraries
+haversine
 
 # Databases
+psycopg2
 pymongo
+sqlalchemy
 
 # Visualisation libraries
 bokeh
+datashader
 ipyleaflet
 ipysheet
 matplotlib
+plotly
+plotly-geo
 seaborn
 
-# Useful libraries
+# Other libraries
 dateparser
+h5py
+hdf5
 humanize
+openpyxl
+requests
+scrapy
+tpot
 tqdm
+tsfresh

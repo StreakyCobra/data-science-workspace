@@ -4,180 +4,165 @@
 #
 #    pip-compile
 #
-absl-py==0.8.0            # via tensorboard, tensorflow-gpu
+absl-py==0.9.0            # via tensorboard, tensorflow-gpu
 appdirs==1.4.3            # via black
-argh==0.26.2              # via watchdog
-aspy.yaml==1.3.0          # via pre-commit
-astor==0.8.0              # via tensorflow-gpu
-astroid==2.2.5            # via pylint
-attrs==19.1.0             # via black, jsonschema, packaging
+astor==0.8.1              # via tensorflow-gpu
+attrs==19.3.0             # via black, jsonschema
 backcall==0.1.0           # via ipython
-black==19.3b0
-bleach==3.1.0             # via nbconvert
-bokeh==1.3.4
+black==19.10b0
+bleach==3.1.1             # via nbconvert
+bokeh==1.4.0
 branca==0.3.1             # via ipyleaflet
-certifi==2019.9.11        # via requests
-cfgv==2.0.1               # via pre-commit
+cachetools==4.0.0         # via google-auth
+certifi==2019.11.28       # via requests
 chardet==3.0.4            # via requests
-click==7.0                # via black, distributed, pip-tools, safety
-cloudpickle==1.2.2        # via dask, distributed
-colorama==0.4.1           # via nbdime
+click==7.0                # via black, distributed, pip-tools
+cloudpickle==1.3.0        # via dask, distributed
+colorama==0.4.3           # via nbdime
 colorcet==2.0.2           # via datashader
 cycler==0.10.0            # via matplotlib
-cython==0.29.13
-dask[complete]==2.4.0     # via datashader, distributed
-datashader==0.7.0
+cython==0.29.15
+dask[complete]==2.11.0    # via datashader, distributed
+datashader==0.10.0
 datashape==0.5.2          # via datashader
-dateparser==0.7.1
-decorator==4.4.0          # via ipython, networkx, traitlets
+dateparser==0.7.2
+decorator==4.4.2          # via ipython, networkx, traitlets
 defusedxml==0.6.0         # via nbconvert
-distributed==2.4.0        # via dask
-dparse==0.4.1             # via safety
-entrypoints==0.3          # via flake8, nbconvert
+distributed==2.11.0       # via dask
+entrypoints==0.3          # via nbconvert
 findspark==1.3.0
-flake8==3.7.8
-fortran-magic==0.7
-fsspec==0.4.5             # via dask
-gast==0.3.2               # via tensorflow-gpu
-gitdb2==2.0.5             # via gitpython
-gitpython==3.0.2          # via nbdime
-google-pasta==0.1.7       # via tensorflow-gpu
-grpcio==1.23.0            # via tensorboard, tensorflow-gpu
-h5py==2.10.0              # via keras, keras-applications
+fsspec==0.6.2             # via dask
+gast==0.2.2               # via tensorflow-gpu
+gitdb==4.0.2              # via gitpython
+gitpython==3.1.0          # via nbdime
+google-auth-oauthlib==0.4.1  # via tensorboard
+google-auth==1.11.2       # via google-auth-oauthlib, tensorboard
+google-pasta==0.1.8       # via tensorflow-gpu
+grpcio==1.27.2            # via tensorboard, tensorflow-gpu
+h5py==2.10.0              # via keras-applications
+haversine==2.2.0
 heapdict==1.0.1           # via zict
-humanize==0.5.1
-identify==1.4.7           # via pre-commit
-idna==2.8                 # via requests
-imageio==2.5.0            # via scikit-image
-importlib-metadata==0.23  # via pre-commit
-ipdb==0.12.2
-ipykernel==5.1.2          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
-ipyleaflet==0.11.2
+humanize==1.0.0
+idna==2.9                 # via requests
+imageio==2.8.0            # via scikit-image
+importlib-metadata==1.5.0  # via jsonschema
+ipdb==0.13.1
+ipykernel==5.1.4          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
+ipyleaflet==0.12.2
 ipysheet==0.4.3
-ipython-genutils==0.2.0   # via jupyter-contrib-nbextensions, nbformat, notebook, qtconsole, traitlets
-ipython==7.8.0
+ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
+ipython==7.13.0
 ipywidgets==7.5.1         # via ipyleaflet, ipysheet, jupyter
 isort==4.3.21
-jedi==0.15.1              # via ipython
-jinja2==2.10.1            # via bokeh, branca, jupyterlab, jupyterlab-server, nbconvert, nbdime, notebook
-joblib==0.13.2            # via scikit-learn
-json5==0.8.5              # via jupyterlab-server
-jsonschema==3.0.2         # via jupyterlab-server, nbformat
-jupyter-client==5.3.2     # via ipykernel, jupyter-console, notebook, qtconsole
-jupyter-console==6.0.0    # via jupyter
-jupyter-contrib-core==0.3.3  # via jupyter-contrib-nbextensions, jupyter-nbextensions-configurator
-jupyter-contrib-nbextensions==0.5.1
-jupyter-core==4.5.0       # via jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole
-jupyter-highlight-selected-word==0.2.0  # via jupyter-contrib-nbextensions
-jupyter-latex-envs==1.4.6  # via jupyter-contrib-nbextensions
-jupyter-nbextensions-configurator==0.4.1
+jedi==0.16.0              # via ipython
+jinja2==2.11.1            # via bokeh, branca, jupyterlab, jupyterlab-server, nbconvert, nbdime, notebook
+joblib==0.14.1            # via scikit-learn
+json5==0.9.1              # via jupyterlab-server
+jsonschema==3.2.0         # via jupyterlab-server, nbformat
+jupyter-client==6.0.0     # via ipykernel, jupyter-console, notebook, qtconsole
+jupyter-console==6.1.0    # via jupyter
+jupyter-core==4.6.3       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
 jupyter==1.0.0
 jupyterlab-server==1.0.6  # via jupyterlab
-jupyterlab==1.1.3
-keras-applications==1.0.8  # via keras, tensorflow-gpu
-keras-preprocessing==1.1.0  # via keras, tensorflow-gpu
-keras==2.2.5
+jupyterlab==1.2.0
+keras-applications==1.0.8  # via tensorflow-gpu
+keras-preprocessing==1.1.0  # via tensorflow-gpu
 kiwisolver==1.1.0         # via matplotlib
-lazy-object-proxy==1.4.2  # via astroid
-line-profiler==2.1.2
-llvmlite==0.29.0          # via numba
+llvmlite==0.31.0          # via numba
 locket==0.2.0             # via partd
-lxml==4.4.1               # via jupyter-contrib-nbextensions
-markdown==3.1.1           # via tensorboard
+markdown==3.2.1           # via tensorboard
 markupsafe==1.1.1         # via jinja2
-matplotlib==3.1.1
-mccabe==0.6.1             # via flake8, pylint
+matplotlib==3.1.3
 mistune==0.8.4            # via nbconvert
-more-itertools==7.2.0     # via zipp
-msgpack==0.6.1            # via distributed
+msgpack==1.0.0            # via distributed
 multipledispatch==0.6.0   # via datashape
-mypy-extensions==0.4.1    # via mypy
-mypy==0.720
-nbconvert==5.6.0          # via jupyter, jupyter-contrib-nbextensions, jupyter-latex-envs, notebook
+mypy-extensions==0.4.3    # via mypy
+mypy==0.761
+nbconvert==5.6.1          # via jupyter, notebook
 nbdime==1.1.0
-nbformat==4.4.0           # via ipywidgets, nbconvert, nbdime, notebook
-networkx==2.3             # via scikit-image
-nodeenv==1.3.3            # via pre-commit
-nose==1.3.7
-notebook==6.0.1           # via jupyter, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, jupyterlab, jupyterlab-server, nbdime, widgetsnbextension
-numba==0.45.1             # via datashader
-numpy==1.17.2
-packaging==19.1           # via bokeh, dparse, safety
-pandas==0.25.1
+nbformat==5.0.4           # via ipywidgets, nbconvert, nbdime, notebook
+networkx==2.4             # via scikit-image
+notebook==6.0.3           # via jupyter, jupyterlab, jupyterlab-server, nbdime, widgetsnbextension
+numba==0.48.0
+numpy==1.18.1
+oauthlib==3.1.0           # via requests-oauthlib
+opt-einsum==3.1.0         # via tensorflow-gpu
+packaging==20.1           # via bokeh
+pandas==1.0.1
 pandocfilters==1.4.2      # via nbconvert
-param==1.9.1              # via colorcet, datashader, pyct
-parso==0.5.1              # via jedi
-partd==1.0.0              # via dask
-pathtools==0.1.2          # via watchdog
-pexpect==4.7.0            # via ipython
+param==1.9.3              # via colorcet, datashader, pyct
+parso==0.6.2              # via jedi
+partd==1.1.0              # via dask
+pathspec==0.7.0           # via black
+patsy==0.5.1              # via statsmodels
+pexpect==4.8.0            # via ipython
 pickleshare==0.7.5        # via ipython
-pillow==6.1.0             # via bokeh, datashader, imageio, scikit-image
-pip-tools==4.1.0
-pre-commit==1.18.3
+pillow==7.0.0             # via bokeh, datashader, imageio, scikit-image
+pip-tools==4.5.1
+plotly-geo==1.0.0
+plotly==4.5.2
 prometheus-client==0.7.1  # via notebook
-prompt-toolkit==2.0.9     # via ipython, jupyter-console
-protobuf==3.9.1           # via tensorboard, tensorflow-gpu
-psutil==5.6.3             # via distributed
-ptvsd==4.3.2
+prompt-toolkit==3.0.3     # via ipython, jupyter-console
+protobuf==3.11.3          # via tensorboard, tensorflow-gpu
+psutil==5.7.0             # via distributed
+psycopg2==2.8.4
 ptyprocess==0.6.0         # via pexpect, terminado
-pycodestyle==2.5.0        # via flake8
+pyasn1-modules==0.2.8     # via google-auth
+pyasn1==0.4.8             # via pyasn1-modules, rsa
 pyct[cmd]==0.4.6          # via colorcet, datashader
-pydocstyle==4.0.1
-pyflakes==2.1.1           # via flake8
-pygments==2.4.2           # via ipython, jupyter-console, nbconvert, nbdime, qtconsole
-pylint==2.3.1
-pymongo==3.9.0
-pyparsing==2.4.2          # via matplotlib, packaging
-pyrsistent==0.15.4        # via jsonschema
-python-dateutil==2.8.0    # via bokeh, datashape, dateparser, jupyter-client, matplotlib, pandas
-python-dotenv==0.10.3
-pytz==2019.2              # via dateparser, pandas, tzlocal
-pywavelets==1.0.3         # via scikit-image
-pyyaml==5.1.2             # via aspy.yaml, bokeh, distributed, dparse, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, keras, pre-commit, pyct, watchdog
-pyzmq==18.1.0             # via jupyter-client, notebook
-qtconsole==4.5.5          # via jupyter
-regex==2019.8.19          # via dateparser
-requests==2.22.0          # via nbdime, pyct, safety
-rope==0.14.0
-safety==1.8.5
-scikit-image==0.15.0
-scikit-learn==0.21.3
-scipy==1.3.1              # via datashader, keras, scikit-image, scikit-learn, seaborn
-seaborn==0.9.0
+pygments==2.5.2           # via ipython, jupyter-console, nbconvert, nbdime, qtconsole
+pymongo==3.10.1
+pyparsing==2.4.6          # via matplotlib, packaging
+pyrsistent==0.15.7        # via jsonschema
+python-dateutil==2.8.1    # via bokeh, datashape, dateparser, jupyter-client, matplotlib, pandas
+python-dotenv==0.12.0
+pytz==2019.3              # via dateparser, pandas, tzlocal
+pywavelets==1.1.1         # via scikit-image
+pyyaml==5.3               # via bokeh, dask, distributed, pyct
+pyzmq==19.0.0             # via jupyter-client, notebook
+qtconsole==4.7.0          # via jupyter
+qtpy==1.9.0               # via qtconsole
+regex==2020.2.20          # via black, dateparser
+requests-oauthlib==1.3.0  # via google-auth-oauthlib
+requests==2.23.0
+retrying==1.3.3           # via plotly
+rsa==4.0                  # via google-auth
+scikit-image==0.16.2
+scikit-learn==0.22.2
+scipy==1.4.1
+seaborn==0.10.0
 send2trash==1.5.0         # via notebook
-six==1.12.0               # via absl-py, astroid, bleach, bokeh, branca, cfgv, cycler, dparse, grpcio, h5py, jsonschema, keras, keras-preprocessing, multipledispatch, nbdime, packaging, pip-tools, pre-commit, prompt-toolkit, protobuf, pyrsistent, python-dateutil, tensorboard, tensorflow-gpu, traitlets
-smmap2==2.0.5             # via gitdb2
-snowballstemmer==1.9.1    # via pydocstyle
+six==1.14.0               # via absl-py, bleach, bokeh, branca, cycler, google-auth, google-pasta, grpcio, h5py, jsonschema, keras-preprocessing, multipledispatch, nbdime, packaging, patsy, pip-tools, plotly, protobuf, pyrsistent, python-dateutil, retrying, tensorboard, tensorflow-gpu, traitlets
+smmap==3.0.1              # via gitdb
 sortedcontainers==2.1.0   # via distributed
-tblib==1.4.0              # via distributed
-tensorboard==1.14.0       # via tensorflow-gpu
-tensorflow-estimator==1.14.0  # via tensorflow-gpu
-tensorflow-gpu==1.14.0
+sqlalchemy==1.3.13
+statsmodels==0.11.1
+tblib==1.6.0              # via distributed
+tensorboard==2.0.2        # via tensorflow-gpu
+tensorflow-estimator==2.0.1  # via tensorflow-gpu
+tensorflow-gpu==2.0.1
 termcolor==1.1.0          # via tensorflow-gpu
-terminado==0.8.2          # via notebook
-testpath==0.3.1           # via datashader, nbconvert
-toml==0.10.0              # via black, pre-commit
+terminado==0.8.3          # via notebook
+testpath==0.4.4           # via nbconvert
+toml==0.10.0              # via black
 toolz==0.10.0             # via dask, datashader, distributed, partd
-tornado==6.0.3            # via bokeh, distributed, ipykernel, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, jupyterlab, nbdime, notebook, terminado
-tqdm==4.35.0
-traitlets==4.3.2          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-core, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook, qtconsole, traittypes
+tornado==6.0.3            # via bokeh, distributed, ipykernel, jupyter-client, jupyterlab, nbdime, notebook, terminado
+tqdm==4.43.0
+traitlets==4.3.3          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole, traittypes
 traittypes==0.2.1         # via ipyleaflet
-typed-ast==1.4.0          # via astroid, mypy
-typing-extensions==3.7.4  # via mypy
+typed-ast==1.4.1          # via black, mypy
+typing-extensions==3.7.4.1  # via mypy
 tzlocal==2.0.0            # via dateparser
-urllib3==1.25.3           # via requests
-virtualenv==16.7.5        # via pre-commit
-watchdog==0.9.0
-wcwidth==0.1.7            # via prompt-toolkit
+urllib3==1.25.8           # via requests
+wcwidth==0.1.8            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
-werkzeug==0.15.6          # via tensorboard
-wheel==0.33.6             # via tensorboard, tensorflow-gpu
+werkzeug==1.0.0           # via tensorboard
+wheel==0.34.2             # via tensorboard, tensorflow-gpu
 widgetsnbextension==3.5.1  # via ipywidgets
-wrapt==1.11.2             # via astroid, tensorflow-gpu
-xarray==0.12.3            # via datashader, ipyleaflet
-yappi==1.0
-zict==1.0.0               # via distributed
-zipp==0.6.0               # via importlib-metadata
+wrapt==1.12.0             # via tensorflow-gpu
+xarray==0.15.0            # via datashader, ipyleaflet
+zict==2.0.0               # via distributed
+zipp==3.0.0               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.2.0        # via ipdb, ipython, jsonschema, jupyter-contrib-core, kiwisolver, markdown, protobuf, safety, tensorboard
+# setuptools==45.2.0        # via distributed, google-auth, ipdb, ipython, jsonschema, kiwisolver, markdown, numba, protobuf, tensorboard
